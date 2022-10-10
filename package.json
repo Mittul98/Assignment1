@@ -1,0 +1,12 @@
+{
+    "name": "Images-Api",
+    "version": "1.0.0",
+    "description": "REST API - images",
+    "dependencies": {
+        "restify": "^4.3.4",
+        "save": "2.3.0"
+    },
+    "author": "Mittul Trivedi",
+    "private": true,
+    "main": "index.js"
+}
