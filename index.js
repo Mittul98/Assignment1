@@ -49,19 +49,15 @@ server.post('/images', function (req, res, next) {
 
   // Input validation for each field
   if (req.params.imageId === undefined ) {
-    // If there are any errors, pass them to next in the correct format
     return next(new restify.InvalidArgumentError('ImageID must be supplied'))
   }
   if (req.params.name === undefined ) {
-    // If there are any errors, pass them to next in the correct format
     return next(new restify.InvalidArgumentError('Image Name must be supplied'))
   }
   if (req.params.url === undefined ) {
-    // If there are any errors, pass them to next in the correct format
     return next(new restify.InvalidArgumentError('Image URL must be supplied'))
   }
   if (req.params.size === undefined ) {
-    // If there are any errors, pass them to next in the correct format
     return next(new restify.InvalidArgumentError('Image Size must be supplied'))
   }
   var newImage = {
